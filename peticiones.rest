@@ -1,0 +1,29 @@
+GET http://localhost:3000/api/inmuebles
+
+###
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+    "piso": 4,
+    "letra": "B",
+    "extension_m2": 100,
+    "numero_habitaciones": 2,
+    "alquilado": false,
+    "nombre_propietario": "Norma Herrera",
+    "mail_contacto": "herrera.n@gmail.com"
+}
+
+###
+PUT http://localhost:3000/api/inmuebles/635c9793d21f8278bcc8cefb
+Content-Type: application/json
+
+{
+    "piso": 4,
+    "alquilado": true,
+    "nombre_propietario": "Norma Herrera"
+}
+
+
+###
+DELETE http://localhost:3000/api/inmuebles/635c9759d21f8278bcc8cef8
