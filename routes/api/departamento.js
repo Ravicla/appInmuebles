@@ -21,9 +21,14 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:departamentoId', async(req, res) => { 
-    const {departamentoId} = req.params;
-    const departamento = await Departamento.findByIdAndUpdate(departamentoId, req.body, {new: true});
-    res.json(departamento);
+    //revisar la validacion en el put
+    try {
+        const {departamentoId} = req.params;
+        const departamento = await Departamento.findByIdAndUpdate(departamentoId, req.body, {new: true});
+        res.json(departamento);
+    } catch (error) {
+        res.json({fatal: error.message})
+    }
 });
 
 router.delete('/:departamentoId', async (req, res) => { 

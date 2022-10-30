@@ -5,8 +5,8 @@ POST http://localhost:3000/api/inmuebles
 Content-Type: application/json
 
 {
-    "piso": 4,
-    "letra": "B",
+    "piso": 5,
+    "letra": 7,
     "extension_m2": 100,
     "numero_habitaciones": 2,
     "alquilado": false,
@@ -15,15 +15,13 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3000/api/inmuebles/635c9793d21f8278bcc8cefb
+PUT http://localhost:3000/api/inmuebles/635eb2295d8ce7bf04a249e7
 Content-Type: application/json
 
 {
-    "piso": 4,
-    "alquilado": true,
-    "nombre_propietario": "Norma Herrera"
+   "piso": 11
 }
 
 
 ###
-DELETE http://localhost:3000/api/inmuebles/635c9759d21f8278bcc8cef8
+DELETE http://localhost:3000/api/inmuebles/635eb14dcae0e99ab2d24c98
