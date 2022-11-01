@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
     "piso": 5,
-    "letra": 7,
+    "letra": "A",
     "extension_m2": 100,
     "numero_habitaciones": 2,
     "alquilado": false,
@@ -19,7 +19,7 @@ PUT http://localhost:3000/api/inmuebles/635eb2295d8ce7bf04a249e7
 Content-Type: application/json
 
 {
-   "piso": 11
+   "piso": 0
 }
 
 
