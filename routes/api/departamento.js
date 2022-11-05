@@ -21,7 +21,6 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:departamentoId', async(req, res) => { 
-    //revisar la validacion en el put
     try {
         const {departamentoId} = req.params;
         const departamento = await Departamento.findByIdAndUpdate(departamentoId, req.body, {new: true, runValidators: true});
